@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="moon" cx="40%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#ff0000"/>
+      <stop offset="60%" stop-color="#8b0000"/>
+      <stop offset="100%" stop-color="#1a0000"/>
+    </radialGradient>
+  </defs>
+  <!-- Moon circle -->
+  <circle cx="32" cy="32" r="28" fill="url(#moon)"/>
+  <!-- Shadow overlay for crescent effect -->
+  <circle cx="42" cy="28" r="24" fill="#000000" opacity="0.92"/>
+  <!-- Subtle glow ring -->
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#ff0000" stroke-width="1" opacity="0.3"/>
+</svg>

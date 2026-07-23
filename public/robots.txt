@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /api/
+Disallow: /uploads/resumes/
+
+Sitemap: https://redmoontechnology.com/sitemap.xml
+
+# Crawl-delay for polite bots
+Crawl-delay: 1
