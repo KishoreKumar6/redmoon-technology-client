@@ -46,6 +46,7 @@ Thumbs.db
 dump/
 *.bson
 *.json
+!vercel.json
 
 # Temporary files
 *.tmp
