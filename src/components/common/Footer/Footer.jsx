@@ -41,6 +41,12 @@ export default function Footer() {
   const [email, setEmail] = useState('')
   const [loading, setLoading] = useState(false)
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
+  }
+
   const handleNewsletter = async (e) => {
     e.preventDefault()
     if (!email) return
@@ -65,7 +71,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <Link to="/" className="inline-flex items-center mb-6 group">
+            <Link to="/" onClick={scrollToTop} className="inline-flex items-center mb-6 group">
               <img
                 src={logo}
                 alt="Red Moon Technology"
@@ -101,6 +107,7 @@ export default function Footer() {
                 <li key={l.name}>
                   <Link
                     to={l.href}
+                    onClick={scrollToTop}
                     className="text-white/50 hover:text-red-400 text-sm transition-colors duration-200 flex items-center gap-2 group"
                   >
                     <span className="w-3 h-px bg-red-500/0 group-hover:bg-red-500 transition-all duration-200 group-hover:w-4" />
@@ -119,6 +126,7 @@ export default function Footer() {
                 <li key={l.name}>
                   <Link
                     to={l.href}
+                    onClick={scrollToTop}
                     className="text-white/50 hover:text-red-400 text-sm transition-colors duration-200 flex items-center gap-2 group"
                   >
                     <span className="w-3 h-px bg-red-500/0 group-hover:bg-red-500 transition-all duration-200 group-hover:w-4" />
@@ -186,12 +194,18 @@ export default function Footer() {
             © {new Date().getFullYear()} Red Moon Technology. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center justify-center md:justify-end gap-3 md:gap-6">
-            <Link to="/admin/login" className="text-white/30 hover:text-white/60 text-xs transition-colors">
+            <Link to="/admin/login" onClick={scrollToTop} className="text-white/30 hover:text-white/60 text-xs transition-colors">
               Admin Login
             </Link>
-            <Link to="/privacy" className="text-white/30 hover:text-white/60 text-xs transition-colors">Privacy Policy</Link>
-            <Link to="/terms" className="text-white/30 hover:text-white/60 text-xs transition-colors">Terms of Service</Link>
-            <Link to="/sitemap.xml" className="text-white/30 hover:text-white/60 text-xs transition-colors">Sitemap</Link>
+            <Link to="/privacy" onClick={scrollToTop} className="text-white/30 hover:text-white/60 text-xs transition-colors">
+              Privacy Policy
+            </Link>
+            <Link to="/terms" onClick={scrollToTop} className="text-white/30 hover:text-white/60 text-xs transition-colors">
+              Terms & Conditions
+            </Link>
+            <Link to="/sitemap.xml" onClick={scrollToTop} className="text-white/30 hover:text-white/60 text-xs transition-colors">
+              Sitemap
+            </Link>
           </div>
         </div>
       </div>

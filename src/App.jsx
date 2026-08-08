@@ -26,6 +26,8 @@ const Careers = lazy(() => import('./pages/Careers/Careers.jsx'))
 const Blog = lazy(() => import('./pages/Blog/Blog.jsx'))
 const BlogSingle = lazy(() => import('./pages/Blog/BlogSingle.jsx'))
 const Contact = lazy(() => import('./pages/Contact/Contact.jsx'))
+const PrivacyPolicy = lazy(() => import('./pages/Legal/PrivacyPolicy.jsx'))
+const TermsAndConditions = lazy(() => import('./pages/Legal/TermsAndConditions.jsx'))
 const NotFound = lazy(() => import('./pages/NotFound/NotFound.jsx'))
 const AdminDashboard = lazy(() => import('./pages/Admin/Dashboard.jsx'))
 const AdminLogin = lazy(() => import('./pages/Admin/AdminLogin.jsx'))
@@ -124,6 +126,8 @@ function App() {
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:slug" element={<BlogSingle />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/privacy" element={<PrivacyPolicy />} />
+                <Route path="/terms" element={<TermsAndConditions />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </MainLayout>
