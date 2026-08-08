@@ -15,10 +15,10 @@ const plans = [
   },
   {
     name: 'Professional',
-    price: '₹25,000',
+    price: '₹15,000',
     period: 'one-time',
     desc: 'For growing businesses ready to scale',
-    features: ['15-page website', 'Custom design', 'Full SEO setup', 'Admin panel', 'Blog & CMS', '3 months support', 'Performance optimized', 'Analytics integration'],
+    features: ['15-page website', 'Custom design', 'Full SEO setup', 'Admin panel', 'E-Commerce', 'Blog & CMS', '3 months support', 'Performance optimized', 'Analytics integration'],
     cta: 'Most Popular',
     popular: true,
   },

@@ -45,8 +45,6 @@ Thumbs.db
 # MongoDB data dumps
 dump/
 *.bson
-*.json
-!vercel.json
 
 # Temporary files
 *.tmp

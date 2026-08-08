@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { FaInstagram, FaLinkedin, FaTwitter, FaYoutube, FaFacebook } from 'react-icons/fa'
+import { FaInstagram, FaFacebook } from 'react-icons/fa'
 import { Mail, Phone, MapPin, Send } from 'lucide-react'
 import { useState } from 'react'
 import api from '../../../api/axios.js'
@@ -30,11 +30,8 @@ const serviceLinks = [
 ]
 
 const socials = [
-  { icon: FaInstagram, href: 'https://instagram.com', label: 'Instagram' },
-  { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: FaTwitter, href: 'https://twitter.com', label: 'Twitter' },
-  { icon: FaYoutube, href: 'https://youtube.com', label: 'YouTube' },
-  { icon: FaFacebook, href: 'https://facebook.com', label: 'Facebook' },
+  { icon: FaInstagram, href: 'https://www.instagram.com/redmoon_technology/', label: 'Instagram' },
+  { icon: FaFacebook, href: 'https://www.facebook.com/profile.php?id=61593140847407', label: 'Facebook' },
 ]
 
 export default function Footer() {
